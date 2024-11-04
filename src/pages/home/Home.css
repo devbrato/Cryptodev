@@ -1,0 +1,174 @@
+.home {
+    padding: 0px 10px;
+    padding-bottom: 100px;
+  }
+  
+  .hero {
+    max-width: 600px;
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .hero h1 {
+    font-size: max(4vw, 36px);
+  }
+  
+  .hero p {
+    width: 75%;
+    color: #e3e3e3;
+    line-height: 1.5;
+  }
+  
+  .hero form {
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .hero input {
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid #3c3c3c;
+  }
+  
+  .hero button {
+    border: none;
+    background: #7927ff;
+    color: #e3e3e3;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 520;
+  }
+  
+  .crypto-table {
+    max-width: 850px;
+    margin: auto;
+    background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+    border-radius: 15px;
+  }
+  
+  .table-layout {
+    display: grid;
+    grid-template-columns: 30px 240px 200px 100px 200px;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+  }
+  
+  .market-cap {
+    text-align: right;
+  }
+  
+  .table-layout:last-child {
+    border: none;
+  }
+  
+  .table-layout div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .table-layout div img {
+    width: 35px;
+  }
+  
+  .table-layout .green {
+    color: rgb(80, 236, 80);
+    text-align: center;
+  }
+  
+  .table-layout .red {
+    color: rgb(206, 9, 9);
+    text-align: center;
+  }
+  
+  /* Responsive Design for Tablets */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 28px;
+    }
+  
+    .hero p {
+      font-size: 14px;
+      width: 85%;
+    }
+  
+    .hero form {
+      width: 90%;
+    }
+  
+    .table-layout {
+      grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+  
+    .market-cap {
+      display: none;
+    }
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 500px) {
+    .hero {
+      gap: 20px;
+      margin: 50px auto;
+    }
+  
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero form {
+      width: 100%;
+      font-size: 16px;
+    }
+  
+    .hero input {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    .hero button {
+      padding: 8px 20px;
+      font-size: 14px;
+    }
+  
+    .crypto-table {
+      padding: 10px;
+      border-radius: 10px;
+    }
+  
+    .table-layout {
+      font-size: 13px;
+      grid-template-columns: 1fr 2fr 1fr;
+      padding: 10px 15px;
+    }
+  
+    .table-layout div img {
+      width: 25px;
+    }
+  
+    .hero form input {
+      width: 80px;
+    }
+  
+    .hero button {
+      padding: 8px 18px;
+    }
+  }
+  

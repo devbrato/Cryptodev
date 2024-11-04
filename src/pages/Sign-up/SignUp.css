@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#0b004e, #1d152f, #002834);
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color:transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.input-field i {
+    font-size: 24px;
+    margin-left: 10px;
+    color: royalblue;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    outline: none;
+    color: #333;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: #2f6caa;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.social-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    color: #ffebeb;
+    border-radius: 50%;
+    border: 1px solid #160060;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #005085;
+    color: #fff;
+}
+
+.social-text {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+.signin-link:hover{
+    text-decoration: underline;
+}
+
+.btn:hover {
+    background-color: #4b7bc4;
+}
+
+.signup-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #bdbdbd;
+    border-top: 3px solid #7927ff;
+    border-radius: 50%;
+    animation: spin 1s infinite linear;
+    margin: auto; /* Center the spinner */
+}
+
+/* Spinner animation */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Center button content including spinner */
+.btn.solid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px; /* Adjust as needed */
+}
+
+
+
+@media (max-width: 480px) {
+    .sign-up-form {
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

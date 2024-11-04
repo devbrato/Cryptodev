@@ -1,0 +1,23 @@
+/* LineChart.css */
+
+.line-chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 800px; /* Limit maximum width */
+    margin: 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .line-chart-container {
+      max-width: 90%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .line-chart-container {
+      max-width: 100%;
+    }
+  }
+  
