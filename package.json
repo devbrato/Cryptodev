@@ -2,8 +2,8 @@
   "name": "project-4",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://devbrato.github.io/project-4",
   "type": "module",
+  "homepage": "https://devbrato.github.io/project-4",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
